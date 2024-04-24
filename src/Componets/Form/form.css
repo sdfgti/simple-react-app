@@ -1,0 +1,49 @@
+.form-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #664b85;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 15px;
+  font-size: 20px; 
+}
+
+input {
+  margin-right: 15px;
+}
+
+.title-label,
+.amount-label,
+.date-label {
+  font-weight: bold;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 10px; 
+}
+
+button {
+  background-color: #310c75;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+button:hover {
+  background-color: #310c75;
+}

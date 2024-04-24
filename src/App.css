@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,18 +10,62 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(102, 82, 82);
 }
 
-.App-link {
-  color: #61dafb;
+.content-container {
+  background-color: #242121; 
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  margin-bottom: 10px;
+}
+
+.background-around-button {
+  background-color: #393f7a;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card.expenses {
+  margin-top: 10px;
+  background-color: #312626;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-item__description h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.expense-item__price {
+  font-weight: bold;
+}
+
+.expense-date {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.expense-date__month {
+  font-weight: bold;
+}
+
+.expense-date__year,
+.expense-date__day {
+  font-size: 12px;
+}
+
+.expense-item__description {
+  padding-left: 10px;
+}
+
+body{
+  background-color:#271d1d;
 }

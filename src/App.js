@@ -25,11 +25,11 @@ function App() {
   };
 
   const handleAddExpense = (newExpense) => {
-    if (newExpense.title && !isNaN(newExpense.amount) && newExpense.date) {
+    if (newExpense.title && newExpense.amount !== "" && !isNaN(newExpense.amount) && newExpense.date) {
       setExpenseList([...expenseList, newExpense]); 
       setShowForm(false);
     } else {
-      alert("Please enter a valid title, amount (a number), and date for the expense.");
+      alert("Please enter a valid title, non-empty amount (a number), and date for the expense.");
     }
   };
 
